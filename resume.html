@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta property="og:title" content="Ananda Prasetyo - Resume" />
+    <meta
+      property="og:description"
+      content="Riwayat singkat perjalanan hidup"
+    />
+    <meta
+      property="og:image"
+      content="https://sycwell.github.io/assets/img/share.jpg"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+
+    <title>Resume - Ananda Prasetyo</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/plugins.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <div class="preloader">
+      <div class="spinner"></div>
+    </div>
+
+    <div class="content-area">
+      <nav class="navbar">
+        <div class="content">
+          <div class="logo" style="pointer-events: none"><a>Resume</a></div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fa fa-close"></i>
+            </div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/portofolio">Portofolio</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/link">Linktree</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fa fa-angle-down"></i>
+          </div>
+        </div>
+      </nav>
+
+      <script>
+        const body = document.querySelector('body');
+        const navbar = document.querySelector('.navbar');
+        const menu = document.querySelector('.menu-list');
+        const menuBtn = document.querySelector('.menu-btn');
+        const cancelBtn = document.querySelector('.cancel-btn');
+        menuBtn.onclick = () => {
+          menu.classList.add('active');
+          menuBtn.classList.add('hide');
+          cancelBtn.classList.add('show');
+          body.classList.add('disabledScroll');
+        };
+        cancelBtn.onclick = () => {
+          menu.classList.remove('active');
+          menuBtn.classList.remove('hide');
+          cancelBtn.classList.remove('show');
+          body.classList.remove('disabledScroll');
+        };
+
+        window.onscroll = () => {
+          this.scrollY > 20
+            ? navbar.classList.add('sticky')
+            : navbar.classList.remove('sticky');
+        };
+      </script>
+
+      <div class="content-area-inner" style="padding-top: 125px">
+        <section id="service">
+          <div id="work" style="padding-bottom: 30px">
+            <div class="showcase">
+              <div class="item">
+                <a href="#" data-featherlight="#item-1-lightbox">
+                  <div
+                    class="background-image"
+                    style="background-image: url(assets/img/profile.jpg)"
+                  ></div>
+                </a>
+
+                <div id="item-1-lightbox" class="work-lightbox">
+                  <img
+                    class="img-responsive"
+                    src="assets/img/profilergb.jpg"
+                    alt="image"
+                  />
+
+                  <h3>Profile</h3>
+                  <p class="subline">ANANDA DWI PRASETYO</p>
+                  <p>
+                    Lahir: 27 Januari 2000<br />
+                    Email: sycwell@gmail.com<br />
+                    Telepon: +62 851 5885 1911<br />
+                    Website: sycwell.github.io<br />
+                    Alamat: Candi - Sidoarjo
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="headline">Pendidikan</h3>
+          <ul class="services-list">
+            <li class="service-item">
+              <button
+                class="btn btn-primary collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse-item-1"
+                aria-expanded="false"
+              >
+                TK DWP Gempolsari (2004-2006)
+              </button>
+
+              <div class="collapse" id="collapse-item-1">
+                <div class="well">
+                  <p>
+                    Saya mengawali bangku pendidikan mulai dari taman
+                    kanak-kanak. Disana saya belajar membaca, menulis, mewarnai
+                    seperti layaknya anak-anak pada umumnya. Pada saat TK, saya
+                    diperlakukan seperti pangeran. Wajar saja karena ibu saya
+                    merupakan salah satu pengajar disana. Sehingga saya selalu
+                    dilindungi dan diperlakukan terlalu baik. Terkadang saya
+                    memanfaatkan hak istimewa ini untuk membuat masalah.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <button
+                class="btn btn-primary collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse-item-2"
+                aria-expanded="false"
+              >
+                SDN Gempolsari II (2006-2009)
+              </button>
+
+              <div class="collapse" id="collapse-item-2">
+                <div class="well">
+                  <p>
+                    Setelah dua tahun, saya melanjutkan pendidikan ke bangku
+                    sekolah dasar. Di sekolah dasar saya banyak belajar hal baru
+                    seperti bahasa, matematika, ipa, dan juga menambah banyak
+                    teman. Akan tetapi cerita indah saya berhenti setelah tiga
+                    tahun semenjak saya pertama menginjakkan kaki ke sekolah
+                    ini. Keluarga saya terpaksa berpindah rumah karena terdampak
+                    bencana Lumpur Panas PT. Lapindo.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <button
+                class="btn btn-primary collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse-item-3"
+                aria-expanded="false"
+              >
+                SDN Bligo (2009-2012)
+              </button>
+
+              <div class="collapse" id="collapse-item-3">
+                <div class="well">
+                  <p>
+                    Di Desa Bligo, kami mencoba membuat kehidupan yang baru.
+                    Keadaan keluarga saya berubah drastis semenjak kepindahan
+                    kami, saya pun juga terpaksa berpindah sekolah dikarenakan
+                    jaraknya yang cukup jauh dari rumah baru kami. Walapun
+                    sekolah saya yang lama tidak terdampak bencana, saya tetap
+                    ingin berpindah sekolah. Di sekolah ini saya mendapat banyak
+                    teman baru dan lingkungan baru yang lebih baik dari
+                    sebelumnya.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <button
+                class="btn btn-primary collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse-item-4"
+                aria-expanded="false"
+              >
+                SMPN 3 Sidoarjo (2012-2015)
+              </button>
+
+              <div class="collapse" id="collapse-item-4">
+                <div class="well">
+                  <p>
+                    Tiga tahun berlalu sejak saya berpindah sekolah, masa
+                    sekolah dasar sudah usai. Waktunya saya menginjakkan kaki ke
+                    bangku SMP. SMPN 3 Sidoarjo merupakan salah satu SMP favorit
+                    yang ada di Kabupaten Sidoarjo. Karena saya memiliki
+                    kemampuan dalam berbahasa Inggris dengan baik, saya dapat
+                    masuk ke kelas bilingual. Untuk masuk kelas tersebut,
+                    tidaklah mudah. Dibutuhkan tes seleksi dan sesi wawancara
+                    dengan saingan peserta seluruh sekolah. Oleh sebab itu, saya
+                    cukup bangga diterima dikelas bilingual di sekolah favorit.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <button
+                class="btn btn-primary collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse-item-5"
+                aria-expanded="false"
+              >
+                SMAN 3 Sidoarjo (2015-2018)
+              </button>
+
+              <div class="collapse" id="collapse-item-5">
+                <div class="well">
+                  <p>
+                    Setelah menghabiskan tiga tahun di bangku SMP, saya
+                    melanjutkan pendidikan di bangku SMA. Saya memilih SMAN 3
+                    Sidoarjo dengan alasan lokasinya yang dekat dengan rumah.
+                    Dengan lokasinya yang dekat, selama tiga tahun saya SMA
+                    tidak pernah sekalipun terlambat masuk. Sewaktu SMA, saya
+                    mengambil kelas peminatan MIPA. Karena menurut saya keahlian
+                    saya berada disana, dan ternyata benar, saya bisa lulus
+                    dengan lancar.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <button
+                class="btn btn-primary collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse-item-6"
+                aria-expanded="false"
+              >
+                UMSIDA (2018-2022)
+              </button>
+
+              <div class="collapse" id="collapse-item-6">
+                <div class="well">
+                  <p>
+                    Tamat SMA, saya belum berencana untuk memiliki pekerjaan,
+                    jadi saya memutuskan untuk berkuliah sejenak. Saya memilih
+                    Universitas Muhammadiyah Sidoarjo juga karena dekat dengan
+                    rumah saya. Karena saya merupakan anak tunggal, orang tua
+                    saya tidak mengizinkan saya berkuliah diluar kota. Sewaktu
+                    kuliah saya mengambil jurusan informatika, saya merasa saya
+                    cukup ahli dibidang tersebut dan sesuai dengan minat saya
+                    selama ini.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div id="service" style="padding-top: 30px">
+            <h3 class="headline">Pengalaman</h3>
+            <ul class="services-list">
+              <li class="service-item">
+                <button
+                  class="btn btn-primary collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse-item-11"
+                  aria-expanded="false"
+                >
+                  Telkom Indonesia (2020)
+                </button>
+
+                <div>
+                  <div class="well">
+                    <p>
+                      Saya memiliki pengalaman magang atau praktek kuliah
+                      lapangan (PKL) di PT. Telekomunikasi Indonesia, tepatnya
+                      di Wilayah Telkom (Witel) Sidoarjo. Kegiatan magang
+                      dilaksanakan pada bulan September - Oktober 2020. Saya
+                      ditempatkan pada divisi Witel Operation Center (WOC). WOC
+                      adalah divisi yang menangani banyak pelanggan, mulai dari
+                      pasang jaringan baru hingga melayani gangguan jaringan.
+                      Disana saya membuat website untuk menangani laporan
+                      teknisi kepada kantor agar lebih mudah. Saya mendapat
+                      predikat sangat baik selama saya magang di Telkom.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="service" style="padding-top: 20px"></div>
+          <h3 class="headline">Keahlian</h3>
+          <ul class="services-list">
+            <li class="service-item">
+              <button
+                class="btn btn-primary collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse-item-7"
+                aria-expanded="false"
+              >
+                Desain Grafis ★★★★
+              </button>
+
+              <div class="collapse" id="collapse-item-7">
+                <div class="well">
+                  <p>
+                    Saya memiliki latar belakang desain melalui software
+                    CorelDRAW sejak masih di Sekolah Dasar. Saya memperdalam
+                    kemampuan saya dengan mengikuti ekstrakurikuler desain
+                    grafis waktu SMP selama dua tahun. Setelah itu, saya
+                    meneruskan mendesain secara otodidak. Saya menyukai
+                    desain-desain yang minimalis, dan saya juga menyukai
+                    logo-logo bertema minimalis juga.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <button
+                class="btn btn-primary collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse-item-8"
+                aria-expanded="false"
+              >
+                Desain Web ★★★
+              </button>
+
+              <div class="collapse" id="collapse-item-8">
+                <div class="well">
+                  <p>
+                    Sejak SD saya memiliki blog pribadi yang masih bisa diakses
+                    hingga saat ini, saya kerap mengutak-atik susunan atau tata
+                    letak kode HTML pada blog saya dulu. Hingga sekarang saya
+                    sudah tidak asing lagi dengan kode HTML maupun CSS.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <button
+                class="btn btn-primary collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse-item-9"
+                aria-expanded="false"
+              >
+                Layanan Web ★★
+              </button>
+
+              <div class="collapse" id="collapse-item-9">
+                <div class="well">
+                  <p>
+                    Saya mengembangkan website melalui arsitektur REST pada
+                    framework NEXT JS untuk proyek skripsi. Dengan menggunakan
+                    NEXT JS, website akan lebih cepat dalam memuat konten serta
+                    mudah dalam perawatan. Saya juga menggunakan supabase
+                    sebagai tempat basis data, karena lebih mudah dan cepat
+                    digunakan.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <button
+                class="btn btn-primary collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse-item-10"
+                aria-expanded="false"
+              >
+                Desain UI &amp; UX ★★★
+              </button>
+
+              <div class="collapse" id="collapse-item-10">
+                <div class="well">
+                  <p>
+                    Selama mengenyam perkuliahan saya membuat banyak prototipe
+                    desain tampilan antarmuka atau UI. Karena saya cukup mahir
+                    menggunakan CorelDRAW saya bisa menggambar hampir apa saja.
+                    Untuk saat ini, mendesain UI maupun merancang diagram sudah
+                    lebih mudah dilakukan. Dengan tool seperti Figma, draw.io
+                    membuat prototipe sudah tidak sulit lagi.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <br /><br />
+
+          <div class="row tools">
+            <div class="col-md-3 col-xs-6">
+              <img class="img-responsive" src="assets/img/tools/tool-1.png" />
+            </div>
+            <div class="col-md-3 col-xs-6">
+              <img class="img-responsive" src="assets/img/tools/tool-2.png" />
+            </div>
+            <div class="col-md-3 col-xs-6">
+              <img class="img-responsive" src="assets/img/tools/tool-3.png" />
+            </div>
+            <div class="col-md-3 col-xs-6">
+              <img class="img-responsive" src="assets/img/tools/tool-4.png" />
+            </div>
+          </div>
+        </section>
+        <section id="footer" class="stand">
+          <script type="application/javascript">
+            function getIP(json) {
+              document.write(json.ip);
+            }
+          </script>
+          <script
+            type="application/javascript"
+            src="https://api.ipify.org?format=jsonp&callback=getIP"
+          ></script>
+          <div>CS:GO Total playtime: 890 hrs</div>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+  </body>
+</html>

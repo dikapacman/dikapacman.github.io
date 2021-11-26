@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta property="og:title" content="Ananda Prasetyo - Portofolio" />
+    <meta
+      property="og:description"
+      content="Berikut adalah portofolio yang telah saya kerjakan."
+    />
+    <meta
+      property="og:image"
+      content="https://sycwell.github.io/assets/img/share.jpg"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+
+    <title>Portofolio - Ananda Prasetyo</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/plugins.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <div class="preloader">
+      <div class="spinner"></div>
+    </div>
+
+    <div class="content-area">
+      <nav class="navbar">
+        <div class="content">
+          <div class="logo" style="pointer-events: none"><a>Portofolio</a></div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fa fa-close"></i>
+            </div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/resume">Resume</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="link">Linktree</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fa fa-angle-down"></i>
+          </div>
+        </div>
+      </nav>
+
+      <script>
+        const body = document.querySelector('body');
+        const navbar = document.querySelector('.navbar');
+        const menu = document.querySelector('.menu-list');
+        const menuBtn = document.querySelector('.menu-btn');
+        const cancelBtn = document.querySelector('.cancel-btn');
+        menuBtn.onclick = () => {
+          menu.classList.add('active');
+          menuBtn.classList.add('hide');
+          cancelBtn.classList.add('show');
+          body.classList.add('disabledScroll');
+        };
+        cancelBtn.onclick = () => {
+          menu.classList.remove('active');
+          menuBtn.classList.remove('hide');
+          cancelBtn.classList.remove('show');
+          body.classList.remove('disabledScroll');
+        };
+
+        window.onscroll = () => {
+          this.scrollY > 20
+            ? navbar.classList.add('sticky')
+            : navbar.classList.remove('sticky');
+        };
+      </script>
+
+      <div class="content-area-inner" style="padding-top: 125px">
+        <section id="work">
+          <div class="showcase">
+            <div class="item">
+              <a href="#" data-featherlight="#item-1-lightbox">
+                <div
+                  class="background-image"
+                  style="background-image: url(assets/img/work/item-1.jpg)"
+                ></div>
+              </a>
+
+              <div id="item-1-lightbox" class="work-lightbox">
+                <img
+                  class="img-responsive"
+                  src="assets/img/work/citizen.jpg"
+                  alt="image"
+                />
+
+                <h3>Citizen</h3>
+                <p class="subline">APLIKASI DAN WEB SERVICE</p>
+                <p>
+                  Banyaknya kerusakan fasilitas umum yang ada di Kabupaten
+                  Sidoarjo melatar belakangi pembuatan aplkasi Citizen. Melalui
+                  aplikasi ini, masyarakat bisa melaporkan kondisi fasilitas
+                  umum dengan hanya men-scan qr code. Dengan sistem web service,
+                  data yang diperoleh dari aplikasi ini juga diharapkan berguna
+                  bagi pemerintah, dalam evaluasi kinerja fasilitas umum yang
+                  telah dibangun.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <a href="#" data-featherlight="#item-2-lightbox">
+                <div
+                  class="background-image"
+                  style="background-image: url(assets/img/work/item-2.jpg)"
+                ></div>
+              </a>
+
+              <div id="item-2-lightbox" class="work-lightbox">
+                <img
+                  class="img-responsive"
+                  src="assets/img/work/ngemeal.jpg"
+                  alt="image"
+                />
+
+                <h3>ngeMeal</h3>
+                <p class="subline">APLIKASI</p>
+                <p>
+                  ngeMeal merupakan ide atau gagasan untuk memecahkan masalah
+                  dalam urusan makanan yang dijual dilingkup kampus. Mengadopsi
+                  alur aplikasi yang sudah ada seperti GO-JEK dan sejenisnya,
+                  aplikasi ini ditujukan untuk memudahkan pemesanan makanan bagi
+                  mahasiswa dan mahasiswi yang tersedia dikantin kampus. Apalagi
+                  dikondisi seperti sekarang yang dianjurkan untuk mengurangi
+                  kontak langsung dan tidak berkerumun. ngeMeal merupakan solusi
+                  yang tepat untuk mengatasi masalah tersebut, khususnya
+                  dilingkup kampus.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <a href="#" data-featherlight="#item-3-lightbox">
+                <div
+                  class="background-image"
+                  style="background-image: url(assets/img/work/item-3.jpg)"
+                ></div>
+              </a>
+
+              <div id="item-3-lightbox" class="work-lightbox">
+                <img
+                  class="img-responsive"
+                  src="assets/img/work/fizzle.jpg"
+                  alt="image"
+                />
+
+                <h3>Fizzle</h3>
+                <p class="subline">APLIKASI</p>
+                <p>
+                  Fizzle adalah aplikasi pencarian orang yang telah melakukan
+                  tindak kejahatan. Melalui aplikasi Fizzle, kita dapat membantu
+                  mencari pelaku kejahatan dengan data-data pelaku yang telah
+                  diberikan. Kita juga bisa mengunggah clue atau petunjuk
+                  jejak-jejak yang ditinggal oleh pelaku. Dengan mengunggah clue
+                  atau meclaim bukti penemuan pelaku, kita akan mendapatkan
+                  reward berupa uang serta bounty atau xp untuk menaikkan status
+                  level kita sebagai hunter dalam aplikasi.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <a href="#" data-featherlight="#item-4-lightbox">
+                <div
+                  class="background-image"
+                  style="background-image: url(assets/img/work/item-4.jpg)"
+                ></div>
+              </a>
+
+              <div id="item-4-lightbox" class="work-lightbox">
+                <img
+                  class="img-responsive"
+                  src="assets/img/work/techact.jpg"
+                  alt="image"
+                />
+
+                <h3>Technician-ACT</h3>
+                <p class="subline">WEBSITE</p>
+                <p>
+                  Technician-ACT merupakan website yang ditujukan untuk
+                  melaporkan tiket dengan status anomali pada sistem pengukuran
+                  redaman, yang terdapat pada pengguna jaringan Telkom. Dengan
+                  website ini, karyawan Telkom tidak lagi repot dalam memilih
+                  dan memilah laporan. Karena semua yang terdapat pada website
+                  sudah melalui pengukuran berdasarkan tanggal, dan status
+                  kondisi jaringan saat ini. Website ini juga membantu
+                  memudahkan teknisi Telkom dalam mengakses data pengguna yang
+                  mangalami anomali, karena website tidak membutuhkan jaringan
+                  intranet milik Telkom.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="footer" class="stand">
+          <div>© Ananda Prasetyo</div>
+          <div>Last update: November 2021</div>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+  </body>
+</html>
