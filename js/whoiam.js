@@ -1,13 +1,14 @@
 new Typed('#typed', {
   strings: [
     'A.K.A Dikapacman',
-    'Graduate Student',
-    'Video Editor',
+    'Science Education Graduate Student',
+    'Creative Video Editing Specialist',
     'Content Creator',
-    'Fresh Graduated',
+    'Science Education Fresh Graduated',
     'Infinite Learners',
     'Creative Thinker',
-    'Educator',
+    'UI/UX Enthusiast',
+    'Science Educator',
   ],
   typeSpeed: 80,
   backSpeed: 40,
